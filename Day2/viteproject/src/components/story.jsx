@@ -1,0 +1,11 @@
+function Story() {
+  return (
+    <div>
+      <h2>My Story</h2>
+      <h3>Chess</h3>
+      <p>My name is Bala Prakash, and one of my favorite hobbies is playing chess. I started playing chess because I enjoy games that make me think carefully and improve my concentration. Chess is not just a game for me; it is something that teaches me patience, planning, and confidence. I regularly play chess on Chess.com, where I spend time practicing and learning new strategies every day. Over time, chess has become an important part of my daily life. I have played more than 23,000 games on Chess.com, which shows how much I enjoy the game. I like different types of chess formats such as Rapid, Blitz, and Bullet. Rapid chess helps me think deeply before making moves, while Blitz and Bullet games improve my speed and quick decision-making skills. Every match gives me a new experience and teaches me something different. I also enjoy solving chess puzzles because they help me improve my attacking and defensive skills. Sometimes puzzles are difficult, but solving them gives me happiness and motivation to learn more. I have completed many lessons on Chess.com to understand openings, tactics, and endgames better. These lessons help me become a smarter and stronger chess player. Chess has improved many qualities in my life. It has increased my focus, patience, and problem-solving ability. Whenever I lose a game, I try to learn from my mistakes instead of giving up. This has taught me the importance of hard work and continuous practice. Winning difficult matches gives me confidence and encourages me to improve further. I enjoy challenging strong players because it helps me test my skills and gain experience. My ratings in Rapid, Blitz, and Bullet have improved through regular practice and dedication. I believe chess is a wonderful game because it trains both the mind and the ability to think ahead. In the future, I want to become an even stronger chess player and achieve higher ratings. I also want to learn advanced strategies and participate in more competitive games. Chess is not only my hobby but also a game that inspires me to think creatively and stay disciplined. I am proud to be a chess player, and I will continue practicing to achieve my goals.</p>
+    </div>
+  );
+}
+
+export default Story;
