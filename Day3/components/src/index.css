@@ -1,111 +1,193 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+/* ===========================
+   Task 1 - Profile Card
+=========================== */
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
-
-body {
-  margin: 0;
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
+.profile-card {
+  width: 250px;
+  margin: 40px auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  background: white;
+}
+
+.profile-card img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* ===========================
+   Task 2 - Hero Banner
+=========================== */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.content h1 {
+  margin-bottom: 15px;
+}
+
+.content button {
+  padding: 10px 20px;
+  border: none;
+  background: crimson;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ===========================
+   Task 3 - Movie Card
+=========================== */
+
+.movie-card {
+  width: 250px;
+  margin: 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px gray;
+  transition: 0.3s;
+  text-align: center;
+  background: white;
+}
+
+.movie-card img {
+  width: 100%;
+}
+
+.movie-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===========================
+   Task 4 - Product Gallery
+=========================== */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ===========================
+   Task 5 - Team Members
+=========================== */
+
+.team {
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 40px 0;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+.card {
+  text-align: center;
+  transition: 0.3s;
 }
 
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
+.card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+/* ===========================
+   Bonus - Netflix Card
+=========================== */
+
+.netflix {
+  width: 260px;
+  margin: 40px auto;
+  background: #1b1b1b;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.netflix img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.netflix:hover {
+  transform: scale(1.05);
+}
+
+.netflix:hover img {
+  transform: scale(1.1);
+}
+
+.details {
+  padding: 15px;
+}
+
+.details button {
+  padding: 10px 20px;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
+
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: 1fr;
   }
-}
-p {
-  margin: 0;
-}
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
+  .netflix {
+    width: 90%;
+  }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+  .profile-card,
+  .movie-card {
+    width: 90%;
+  }
+
+  .profile-card img {
+    width: 100%;
+  }
 }
